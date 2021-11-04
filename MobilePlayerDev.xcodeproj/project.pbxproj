@@ -13,7 +13,7 @@
 		501BF8AC2554270A00955C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501BF8AA2554270A00955C72 /* Main.storyboard */; };
 		501BF8AE2554270E00955C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501BF8AD2554270E00955C72 /* Assets.xcassets */; };
 		501BF8B12554270E00955C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501BF8AF2554270E00955C72 /* LaunchScreen.storyboard */; };
-		706FFF9C273355AD00B86D70 /* MobilePlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 706FFF9B273355AD00B86D70 /* MobilePlayer */; };
+		7091171F27335D6B00EC92E9 /* MobilePlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 7091171E27335D6B00EC92E9 /* MobilePlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,6 @@
 		501BF8AD2554270E00955C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		501BF8B02554270E00955C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		501BF8B22554270E00955C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		706FFF97273354B000B86D70 /* MobilePlayer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MobilePlayer; path = ../MobilePlayer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				706FFF9C273355AD00B86D70 /* MobilePlayer in Frameworks */,
+				7091171F27335D6B00EC92E9 /* MobilePlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +42,6 @@
 		501BF8982554270A00955C72 = {
 			isa = PBXGroup;
 			children = (
-				706FFF96273354B000B86D70 /* Packages */,
 				501BF8A32554270A00955C72 /* MobilePlayerDev */,
 				501BF8A22554270A00955C72 /* Products */,
 				706FFF9A273355AD00B86D70 /* Frameworks */,
@@ -72,14 +70,6 @@
 			path = MobilePlayerDev;
 			sourceTree = "<group>";
 		};
-		706FFF96273354B000B86D70 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				706FFF97273354B000B86D70 /* MobilePlayer */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		706FFF9A273355AD00B86D70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +94,7 @@
 			);
 			name = MobilePlayerDev;
 			packageProductDependencies = (
-				706FFF9B273355AD00B86D70 /* MobilePlayer */,
+				7091171E27335D6B00EC92E9 /* MobilePlayer */,
 			);
 			productName = MobilePlayerDev;
 			productReference = 501BF8A12554270A00955C72 /* MobilePlayerDev.app */;
@@ -133,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 501BF8982554270A00955C72;
+			packageReferences = (
+				7091171D27335D6B00EC92E9 /* XCRemoteSwiftPackageReference "MobilePlayer" */,
+			);
 			productRefGroup = 501BF8A22554270A00955C72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,9 +358,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		7091171D27335D6B00EC92E9 /* XCRemoteSwiftPackageReference "MobilePlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ferhatabd/MobilePlayer.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		706FFF9B273355AD00B86D70 /* MobilePlayer */ = {
+		7091171E27335D6B00EC92E9 /* MobilePlayer */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 7091171D27335D6B00EC92E9 /* XCRemoteSwiftPackageReference "MobilePlayer" */;
 			productName = MobilePlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
